@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本語を勉強したい</title>
+    <style>
+       
+    </style>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <div wm-slider id="imagem">
+        <p>
+            <picture>
+                <source srcset="../imagens/Baka1.jpg" alt="Imagem Baka1"
+                    width="900" height="600"
+                    media="(min-width: 600px)">
+                <img src="../imagens/Baka8.jpg" alt="Imagem Baka8" 
+                width="200" height="342">
+            </picture>
+        </p>
+        <p>
+            <picture>
+                <source srcset="../imagens/Baka2.jpg" alt="Imagem Baka2"
+                    width="900" height="600"
+                    media="(min-width: 600px)">
+                <img src="../imagens/Baka3.jpg" alt="Imagem Baka3" 
+                width="200" height="342">
+            </picture>
+        </p>
+        <p>
+            <picture>
+                <source srcset="../imagens/Baka4.jpg" alt="Imagem Baka4"
+                    width="900" height="600"
+                    media="(min-width: 600px)">
+                <img src="../imagens/Baka9.jpg" alt="Imagem Baka9" 
+                width="200" height="342">
+            </picture>
+        </p>
+        <p>    
+            <picture>
+                <source srcset="../imagens/Baka5.jpg" alt="Imagem Baka5"
+                    width="900" height="600"
+                    media="(min-width: 600px)">
+                <img src="../imagens/Baka10.jpg" alt="Imagem Baka10" 
+                width="200" height="342">
+            </picture>
+        </p>
+    </div>
+    <header id="cabecalho">
+        <h1 class="titulo">日本語を勉強したい</h1>
+    </header>
+    <nav id="links">
+        <a  class="linkporcima" href wm-nav="link/Lista.html">01 - Lista</a> 
+        <a  class="linkporcima" href wm-nav="link/Link.html">02 - Vídeo tteuw</a> 
+        <a  class="linkporcima" href wm-nav="link/tabela.html">03 - Tabela</a> 
+        <a  class="linkporcima" href wm-nav="link/form/form.html">04 - Fromulário</a> 
+        <a  class="linkporcima" href wm-nav="link/videos.html">05 - Vídeos</a>
+        <a  href="link/form/form2.html">06 - Login</a>
+    </nav>
+    <div id="barralatesquerda">
+
+    </div>
+    
+    <div id="barralatdireita">
+
+    </div>
+    <div id="meio">
+        
+    </div>
+    <div id="meio2">
+        <h3></h3>
+    </div>
+    <div id="contato">
+
+    </div>
+    <section id="conteudo"></section>
+    <footer id="footer">
+        <br>
+        <a href="index.html" class="botao-voltar">Início</a><br>
+    </footer>
+    <script>
+        document.querySelectorAll('[wm-nav]').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+
+            link.onclick = function(e) {
+                e.preventDefault() 
+                fetch(link.getAttribute('wm-nav'))
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script> 
+    <script>
+        function mover(elem, inicio, fim, passo, callback){
+            const novoInicio = inicio - passo
+            if(novoInicio >= fim){
+                elem.style.left =  novoInicio + 'px'
+                setTimeout(() => mover(elem, novoInicio, fim, passo, callback), 7)
+            }else{
+                callback()
+            }
+        }
+        function slider(){
+            const elementos = document.querySelectorAll('[wm-slider] > p')
+            const slides = Array.from(elementos)
+            exibirSlide(slides, slides[0])
+        }
+        function exibirSlide(slides, slide){
+            slide.style.display = 'block'
+    
+            const inicio = 705
+            const fim = 300
+    
+            slide.style.left = `${inicio}px`
+    
+            mover(slide, inicio, fim, 1, () => {
+                slide.style.display = 'none'
+                exibirSlide(slides, getProximo(slides, slide))
+            }) 
+        }
+    
+        function getProximo(lista, atual){
+            const i = lista.indexOf(atual) + 1
+            return i < lista.length ? lista[i] : lista[0]
+        }
+        slider()
+    </script>
+</body>
+</html>
+
+
+
+
+
+
