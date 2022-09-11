@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>日本語を勉強したい</title>
     <style>
-       
     </style>
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/index.css"><!--chamar o css-->
+    <link rel="stylesheet" href="CSS/botao.css">
 </head>
 <body>
     <div wm-slider id="imagem">
         <p>
             <picture>
                 <source srcset="../imagens/Baka1.jpg" alt="Imagem Baka1"
-                    width="900" height="600"
+                    width="950" height="600"
                     media="(min-width: 600px)">
                 <img src="../imagens/Baka8.jpg" alt="Imagem Baka8" 
                 width="200" height="342">
@@ -24,7 +24,7 @@
         <p>
             <picture>
                 <source srcset="../imagens/Baka2.jpg" alt="Imagem Baka2"
-                    width="900" height="600"
+                    width="950" height="600"
                     media="(min-width: 600px)">
                 <img src="../imagens/Baka3.jpg" alt="Imagem Baka3" 
                 width="200" height="342">
@@ -33,7 +33,7 @@
         <p>
             <picture>
                 <source srcset="../imagens/Baka4.jpg" alt="Imagem Baka4"
-                    width="900" height="600"
+                    width="950" height="600"
                     media="(min-width: 600px)">
                 <img src="../imagens/Baka9.jpg" alt="Imagem Baka9" 
                 width="200" height="342">
@@ -42,7 +42,7 @@
         <p>    
             <picture>
                 <source srcset="../imagens/Baka5.jpg" alt="Imagem Baka5"
-                    width="900" height="600"
+                    width="950" height="600"
                     media="(min-width: 600px)">
                 <img src="../imagens/Baka10.jpg" alt="Imagem Baka10" 
                 width="200" height="342">
@@ -52,16 +52,16 @@
     <header id="cabecalho">
         <h1 class="titulo">日本語を勉強したい</h1>
     </header>
-    <nav id="links">
-        <a  class="linkporcima" href wm-nav="link/Lista.html">01 - Lista</a> 
-        <a  class="linkporcima" href wm-nav="link/Link.html">02 - Vídeo tteuw</a> 
-        <a  class="linkporcima" href wm-nav="link/tabela.html">03 - Tabela</a> 
-        <a  class="linkporcima" href wm-nav="link/form/form.html">04 - Fromulário</a> 
-        <a  class="linkporcima" href wm-nav="link/videos.html">05 - Vídeos</a>
-        <a  href="link/form/form2.html">06 - Login</a>
+    <nav><!--links de navegacao-->
+        <button  class="btn-4" href wm-nav="link/Lista.html">Lista</button> 
+        <button  class="btn-4" href wm-nav="link/Link.html">Vídeo tteuw</button> 
+        <button  class="btn-4" href wm-nav="link/tabela.html">Tabela</button> 
+        <button  class="btn-4" href wm-nav="link/form/form.html">Fromulário</button> 
+        <button  class="btn-4" href wm-nav="link/videos.html">Vídeos</button>
+        <button  class="btn-4" href="link/form/form2.html">Login</button>
     </nav>
     <div id="barralatesquerda">
-
+        
     </div>
     
     <div id="barralatdireita">
@@ -71,7 +71,7 @@
         
     </div>
     <div id="meio2">
-        <h3></h3>
+        
     </div>
     <div id="contato">
 
@@ -81,7 +81,7 @@
         <br>
         <a href="index.html" class="botao-voltar">Início</a><br>
     </footer>
-    <script>
+    <script> //click para abrir outra pagina
         document.querySelectorAll('[wm-nav]').forEach(link => {
             const conteudo = document.getElementById('conteudo')
 
@@ -93,7 +93,7 @@
             }
         })
     </script> 
-    <script>
+    <script> //passar imagens
         function mover(elem, inicio, fim, passo, callback){
             const novoInicio = inicio - passo
             if(novoInicio >= fim){
@@ -111,7 +111,7 @@
         function exibirSlide(slides, slide){
             slide.style.display = 'block'
     
-            const inicio = 705
+            const inicio = 670
             const fim = 300
     
             slide.style.left = `${inicio}px`

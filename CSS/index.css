@@ -1,30 +1,31 @@
 .titulo{
-    color: #4B0082;
+    color: #fff;
     font-size: 60px;
     width: calc(100% - 800px); 
 }
 .titulo:hover{
-    color: #8A2BE2;
+    color: #03e9f4;
+    position: relative;
 }
 .linkporcima:hover{
-    color: 	#8A2BE2;
+    color: 	rgb(10, 11, 21);
     font-family: Arial, Helvetica, sans-serif;
 }
 .botao-voltar:hover{
-    color:	#8A2BE2;
+    color:	rgb(10, 11, 21);
     font-family: Arial, Helvetica, sans-serif;
 }
 p{
     position: absolute;
     display: none;
-    top: 294px;
+    top: 320px;
 }
-body {
+body{
     font-family: 'Roboto Mono', monospace;
-    background-color :#ffffff; 
+    background-color :#172031; 
 }
 a{
-    color: #9400D3;
+    color: #03e9f4;
     font-size: 20px;
     text-align: center;
     font-family: helvetica;
@@ -35,49 +36,42 @@ a{
     margin-left: -8px;
     margin-right: -8px;
     height: 230px;
-    background-color :#220263;
-    text-align: center;
-}
-#links{
-    margin-left: -8px;
-    margin-right: -8px;
-    height: 80px;
-    background-color :#190149; 
+    background-color :#172031;
     text-align: center;
 }
 #barralatesquerda{
     margin-left: -8px;
-    height: 2000px;
+    height: 1000px;
     width: 300px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     float: left;
 }
 #meio{
-    background-color :#330197;
+    background-color :#172031;
     height: 600px;
     width: 1600px; 
 }
 #barralatdireita{
     margin-right: -8px;
-    height: 2000px;
+    height: 1000px;
     width: 300px;
-    background-color :#fff;
+    background-color :rgb(255, 255, 255);
     float: right;
 }
 #meio2{
-    height: 1400px;
+    height: 400px;
     width: 1600px;
-    background-color :#ffffff;
+    background-color :rgb(255, 255, 255);
 }
 #contato{
     margin-left: -8px;
     margin-right: -8px;
-    height: 400px;
-    background-color :#220263;
+    height: 300px;
+    background-color :#1d2941;
 }
 #footer{
     height: 80px;
-    background-color: #190149;
+    background-color: #172031;
     clear: both;
     margin-right: -8px;
     margin-left: -8px;
