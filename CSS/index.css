@@ -8,15 +8,15 @@
     position: relative;
 }
 .linkporcima:hover{
-    color: 	rgb(10, 11, 21);
+    color: 	#fff;
     font-family: Arial, Helvetica, sans-serif;
 }
 .botao-voltar:hover{
-    color:	rgb(10, 11, 21);
+    color:	#022859;
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    background: #1d2941;
+    background: #05AFF2;
     font-size: 50%;
     font-family: 'Roboto Mono', monospace; 
     margin: 0;
@@ -27,7 +27,7 @@ p{
     top: 320px;
 }
 a{
-    color: #03e9f4;
+    color: #05C7F2;
     font-size: 20px;
     text-align: center;
     font-family: helvetica;
@@ -37,40 +37,40 @@ a{
     margin-top: -40px;
     
     height: 230px;
-    background-color: #172031;
+    background-color: #022859;
     text-align: center;
 }
 #barralatesquerda{
     height: 1000px;
     width: 300px;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     float: left;
 }
 #meio{
-    background-color :#172031;
+    background-color :#05AFF2;
     height: 600px;
     width: 1610px; 
 }
 #barralatdireita{
     height: 1000px;
     width: 300px;
-    background-color :rgb(255, 255, 255);
+    background-color :#fff;
     float: right;
 }
 #meio2{
     margin: auto;
     height: 400px;
     width: 1600px;
-    background-color :rgb(255, 255, 255);
+    background-color :  #fff;
 }
 #contato{
     
     height: 300px;
-    background-color :#1d2941;
+    background-color :#022859;
 }
 #footer{
     height: 80px;
-    background-color: #172031;
+    background-color: #F26D9E;
     clear: both;
     
 }
