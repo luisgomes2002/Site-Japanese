@@ -82,10 +82,12 @@
         <a href="index.html" class="botao-voltar">Início</a><br>
     </footer>
     <script> //click para abrir outra pagina
-        document.querySelectorAll('[wm-nav]').forEach(link => {
+        document.querySelectorAll('[wm-nav]').forEach(link => 
+        {
             const conteudo = document.getElementById('conteudo')
 
-            link.onclick = function(e) {
+            link.onclick = function(e)
+            {
                 e.preventDefault() 
                 fetch(link.getAttribute('wm-nav'))
                     .then(resp => resp.text())
@@ -94,21 +96,27 @@
         })
     </script> 
     <script> //passar imagens
-        function mover(elem, inicio, fim, passo, callback){
+        function mover(elem, inicio, fim, passo, callback)
+        {
             const novoInicio = inicio - passo
-            if(novoInicio >= fim){
+            if(novoInicio >= fim)
+            {
                 elem.style.left =  novoInicio + 'px'
                 setTimeout(() => mover(elem, novoInicio, fim, passo, callback), 7)
-            }else{
+            }
+            else
+            {
                 callback()
             }
         }
-        function slider(){
+        function slider()
+        {
             const elementos = document.querySelectorAll('[wm-slider] > p')
             const slides = Array.from(elementos)
             exibirSlide(slides, slides[0])
         }
-        function exibirSlide(slides, slide){
+        function exibirSlide(slides, slide)
+        {
             slide.style.display = 'block'
     
             const inicio = 670
@@ -116,13 +124,15 @@
     
             slide.style.left = `${inicio}px`
     
-            mover(slide, inicio, fim, 1, () => {
+            mover(slide, inicio, fim, 1, () => 
+            {
                 slide.style.display = 'none'
                 exibirSlide(slides, getProximo(slides, slide))
             }) 
         }
     
-        function getProximo(lista, atual){
+        function getProximo(lista, atual)
+        {
             const i = lista.indexOf(atual) + 1
             return i < lista.length ? lista[i] : lista[0]
         }
@@ -130,9 +140,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
