@@ -16,7 +16,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    background: #05AFF2;
+    background: #3E3E3E;
     font-size: 50%;
     font-family: 'Roboto Mono', monospace; 
     margin: 0;
@@ -27,7 +27,7 @@ p{
     top: 320px;
 }
 a{
-    color: #05C7F2;
+    color: #717171;
     font-size: 20px;
     text-align: center;
     font-family: helvetica;
@@ -37,40 +37,40 @@ a{
     margin-top: -40px;
     
     height: 230px;
-    background-color: #022859;
+    background-color: #252525;
     text-align: center;
 }
 #barralatesquerda{
     height: 1000px;
     width: 300px;
-    background-color: #fff;
+    background-color: #717171;
     float: left;
 }
 #meio{
-    background-color :#05AFF2;
+    background-color :#3E3E3E;
     height: 600px;
     width: 1610px; 
 }
 #barralatdireita{
     height: 1000px;
     width: 300px;
-    background-color :#fff;
+    background-color :#717171;
     float: right;
 }
 #meio2{
     margin: auto;
     height: 400px;
     width: 1600px;
-    background-color :  #fff;
+    background-color :  #717171;
 }
 #contato{
     
     height: 300px;
-    background-color :#022859;
+    background-color :#3E3E3E;
 }
 #footer{
     height: 80px;
-    background-color: #F26D9E;
+    background-color: #252525;
     clear: both;
     
 }

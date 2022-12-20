@@ -1,4 +1,4 @@
-.container {
+.container{
   padding: 2em;
   margin-top: 5rem;
 }
@@ -12,7 +12,7 @@ button::after{
 button{
   background: none;
   cursor: pointer;
-  border: 3px solid #00D8FF;
+  border: 3px solid #717171;
   border-radius: 5px;
   color: #fff;
   font-size: 1.6em;
@@ -25,13 +25,13 @@ button{
 }
 button::before,
 button::after{
-  background: #00D8FF;
+  background: #3E3E3E;
   content: '';
   position: absolute;
   z-index: -1;
 }
 button:hover {
-  color: #202435;
+  color: #fff;
 }
 .btn-4::before {
   height: 100%;
@@ -41,7 +41,7 @@ button:hover {
 }
 
 .btn-4::after {
-  background: #202435;
+  background: #252525;
   height: 100%;
   left: 0;
   top: 0;
