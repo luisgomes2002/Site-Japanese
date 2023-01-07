@@ -1,15 +1,20 @@
-.container{
+.container
+{
   padding: 2em;
   margin-top: 5rem;
 }
+
 button,
-button::after{
+button::after
+{
   -webkit-transition: all 0.s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-button{
+
+button
+{
   background: none;
   cursor: pointer;
   border: 3px solid #717171;
@@ -23,24 +28,31 @@ button{
   text-transform: uppercase;
   margin-left: 77px;
 }
+
 button::before,
-button::after{
+button::after
+{
   background: #3E3E3E;
   content: '';
   position: absolute;
   z-index: -1;
 }
-button:hover {
+
+button:hover 
+{
   color: #fff;
 }
-.btn-4::before {
+
+.btn-4::before 
+{
   height: 100%;
   left: 0;
   top: 0;
   width: 100%;
 }
 
-.btn-4::after {
+.btn-4::after 
+{
   background: #252525;
   height: 100%;
   left: 0;
@@ -48,7 +60,8 @@ button:hover {
   width: 100%;
 }
 
-.btn-4:hover:after {
+.btn-4:hover:after 
+{
   height: 0;
   left: 50%;
   top: 50%;

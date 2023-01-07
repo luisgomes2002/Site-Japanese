@@ -88,7 +88,7 @@
 
             link.onclick = function(e)
             {
-                e.preventDefault() 
+                e.preventDefault()
                 fetch(link.getAttribute('wm-nav'))
                     .then(resp => resp.text())
                     .then(html => conteudo.innerHTML = html)
@@ -109,12 +109,14 @@
                 callback()
             }
         }
+
         function slider()
         {
             const elementos = document.querySelectorAll('[wm-slider] > p')
             const slides = Array.from(elementos)
             exibirSlide(slides, slides[0])
         }
+        
         function exibirSlide(slides, slide)
         {
             slide.style.display = 'block'

@@ -1,74 +1,101 @@
-.titulo{
+.titulo
+{
     color: #fff;
     font-size: 60px;
     width: calc(100% - 800px); 
 }
-.titulo:hover{
-    color: #03e9f4;
+
+.titulo:hover
+{
+    color: #717171;
     position: relative;
 }
-.linkporcima:hover{
+
+.linkporcima:hover
+{
     color: 	#fff;
     font-family: Arial, Helvetica, sans-serif;
 }
-.botao-voltar:hover{
+
+.botao-voltar:hover
+{
     color:	#022859;
     font-family: Arial, Helvetica, sans-serif;
 }
-body {
+
+body 
+{
     background: #3E3E3E;
     font-size: 50%;
     font-family: 'Roboto Mono', monospace; 
     margin: 0;
 }
-p{
+
+p
+{
     position: absolute;
     display: none;
     top: 320px;
 }
-a{
+
+a
+{
     color: #717171;
     font-size: 20px;
     text-align: center;
     font-family: helvetica;
     width: calc(100% -30px);
 }
-#cabecalho{
+
+#cabecalho
+{
     margin-top: -40px;
     
     height: 230px;
     background-color: #252525;
     text-align: center;
 }
-#barralatesquerda{
+
+#barralatesquerda
+{
     height: 1000px;
     width: 300px;
     background-color: #717171;
     float: left;
 }
-#meio{
+
+#meio
+{
     background-color :#3E3E3E;
     height: 600px;
     width: 1610px; 
 }
-#barralatdireita{
+
+#barralatdireita
+{
     height: 1000px;
     width: 300px;
     background-color :#717171;
     float: right;
 }
-#meio2{
+
+#meio2
+{
     margin: auto;
     height: 400px;
     width: 1600px;
     background-color :  #717171;
 }
-#contato{
+
+#contato
+{
     
     height: 300px;
     background-color :#3E3E3E;
 }
-#footer{
+
+#footer
+{
     height: 80px;
     background-color: #252525;
     clear: both;
